@@ -20,7 +20,7 @@ namespace WebApplication5
         protected void Button1_Click(object sender, EventArgs e)
         {
             string s_data = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["AcountConnectionString2"].ConnectionString;
-
+            
             SqlConnection connection = new SqlConnection(s_data);
 
             string sqlstr = $"insert into [Users](acount,password,userName) values (@acount,@password,@userName)";

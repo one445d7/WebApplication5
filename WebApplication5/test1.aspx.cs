@@ -15,7 +15,7 @@ namespace WebApplication5
             if (Session["Logined"] != null && Session["Logined"] != "login")
             {
                 Server.Transfer("game1.aspx");
-            }
+            }//
         }
 
         protected void Button1_Click(object sender, EventArgs e)
